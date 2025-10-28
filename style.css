@@ -75,6 +75,13 @@ nav ul li a:hover {
 /* Desktop */
 @media screen and (min-width: 930px) {
 
+    nav {
+        display: block;
+        opacity: 1;
+        position: relative;
+        text-align: left;
+    }
+
     section {
         display: inline-block;
         width: 30%;
@@ -95,6 +102,7 @@ nav ul li a:hover {
 
     nav ul li {
         display: inline-block;
+        border: none;
     }
 
 }
