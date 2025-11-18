@@ -14,3 +14,20 @@ function toggleMenu(evt) {
         nav.style.opacity = 1;
     }
 }
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    // prevent default form submission
+    event.preventDefault();
+
+    // collect form data\
+    const firstName = document.querySelector("#fname").value;
+    const lastName = document.querySelector("#lname").value;
+    const email = document.querySelector("#email").value;
+    const phone = document.querySelector("#phone").value;
+
+    // log form data to console
+    console.log(`Form submitted: ${firstName} ${lastName} ${email} ${phone} `);
+
+    // reset form
+    document.getElementById("contactForm").reset();
+});
